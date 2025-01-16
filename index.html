@@ -30,7 +30,7 @@
         </video>
     </div>
 
-    <div class="container">
+    <main class="container">
         <div class="container__left framed-golden-2">
 
             <div class="score_box frame">
@@ -55,11 +55,26 @@
         <div class="container__right">
             <div class="card-box__container">
                 <div class="card-box framed" id="computer-cards"></div>
-                <div class="card-versus"></div>
+                <div class="card-versus">
+
+                    <div class="versus-top">
+                        <div class="card-infield">
+                            <img src="player-field-card" height="180px" width="125px">
+                        </div>
+                        <img height="100px" src="./src/assets/icons/millenium2.png">
+                        <div class="card-infield">
+                            <img src="computer-field-card" height="180px" width="125px">
+                        </div>
+                    </div>
+                    <div class="versus-bottom">
+                        <button id="next-duel" class="rpgui-button" onclick="resetDuel()">GANHOU</button>
+                    </div>
+
+                </div>
                 <div class="card-box framed" id="player-cards"> </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <script src="./src/scripts/engine.js" defer></script>
 </body>
